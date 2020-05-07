@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <!--app:dotP_dot_color="#f5b9d4"
+            app:dotP_dot_selected_color="#aadfcc"-->
+    <com.kincai.testcustomview_pointprogress.DotPollingView
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        app:dotP_dot_color="#f5b9d4"
+        app:dotP_dot_selected_color="#aadfcc"
+        app:dotP_dot_radius="3.5dp"
+        app:dotP_dot_max_radius="5.5dp"
+        app:dotP_dot_spacing="6dp"
+        app:dotP_dot_count="3"
+        app:dotP_dot_size_change_rate="0.9" />
+
+    <com.kincai.testcustomview_pointprogress.view.CirclePointLoadView
+        android:layout_width="80dp"
+        android:id="@+id/clv"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"  />
+
+
+    <com.mingle.widget.LoadingView
+        android:id="@+id/loadView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp" />
+
+
+</LinearLayout>
